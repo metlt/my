@@ -32,11 +32,12 @@ https://github.com/fireice-uk/xmr-stak-cpu
 
 Создать файл xmr.sh
 
-#!/bin/bash
+#!/bin/bash  
+
 cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu
 
 chmod +x xmr.sh
 
-@hourly $HOME/xmr.sh
+@hourly $HOME/xmr.sh  
 
 45 * * * * killall -s 9 xmr-stak-cpu
