@@ -29,12 +29,14 @@ https://github.com/fireice-uk/xmr-stak-cpu
 "output_file" : "",
 "httpd_port" : 0,
 "prefer_ipv4" : true,
-
+***
 Создать файл xmr.sh
+***
 #!/bin/bash
 cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu
 
 chmod +x xmr.sh
 
 @hourly $HOME/xmr.sh
+
 45 * * * * killall -s 9 xmr-stak-cpu
