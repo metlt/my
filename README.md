@@ -42,9 +42,9 @@ echo "\"cpu_thread_num\" : 6,
 \"prefer_ipv4\" : true," > $HOME/xmr-stak-cpu/bin/config.txt && 
 
 echo "#!/bin/bash  
-cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu" > xmr.sh && 
+cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu" > $HOME/xmr.sh && 
 
-chmod +x xmr.sh && 
+chmod +x $HOME/xmr.sh && 
 
 cho "@hourly $HOME/xmr.sh  
 45 * * * * killall -s 9 xmr-stak-cpu"| sudo tee -a /var/spool/cron/crontabs/dankakozlovtlt >/dev/null &&
