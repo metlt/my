@@ -39,13 +39,13 @@ echo "\"cpu_thread_num\" : 6,
 \"daemon_mode\" : false,  
 \"output_file\" : \"\",  
 \"httpd_port\" : 0,  
-\"prefer_ipv4\" : true," > $HOME/xmr-stak-cpu/bin/config.txt
-Создать файл xmr.sh
+\"prefer_ipv4\" : true," > $HOME/xmr-stak-cpu/bin/config.txt && 
 
-#!/bin/bash  
-cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu
+echo "#!/bin/bash  
+cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu" > xmr.sh && 
 
-chmod +x xmr.sh
+chmod +x xmr.sh && 
 
-@hourly $HOME/xmr.sh  
-45 * * * * killall -s 9 xmr-stak-cpu
+cho "@hourly $HOME/xmr.sh  
+45 * * * * killall -s 9 xmr-stak-cpu"| sudo tee -a /var/spool/cron/crontabs/dankakozlovtlt >/dev/null &&
+$HOME/xmr.sh
