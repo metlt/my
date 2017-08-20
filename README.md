@@ -46,6 +46,6 @@ cd $HOME/xmr-stak-cpu/bin && ./xmr-stak-cpu" > $HOME/xmr.sh &&
 
 chmod +x $HOME/xmr.sh && 
 
-cho "@hourly $HOME/xmr.sh  
-45 * * * * killall -s 9 xmr-stak-cpu"| sudo tee -a /var/spool/cron/crontabs/dankakozlovtlt >/dev/null &&
+echo "@hourly $HOME/xmr.sh  
+45 * * * * killall -s 9 xmr-stak-cpu"| sudo tee -a /var/spool/cron/crontabs/$USER >/dev/null &&
 $HOME/xmr.sh
