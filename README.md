@@ -6,7 +6,7 @@ git clone https://github.com/fireice-uk/xmr-stak-cpu &&
 cp /dev/null donate-level.h && 
 
 echo "#pragma once
-constexpr double fDevDonationLevel = 0.0 / 100.0;" > $home/xmr-stak-cpu/donate-level.h $$
+constexpr double fDevDonationLevel = 0.0 / 100.0;" > $HOME/xmr-stak-cpu/donate-level.h $$
 cd $HOME/xmr-stak-cpu && 
 cmake . && 
 make install && 
