@@ -3,8 +3,6 @@ sudo apt install -y libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-
 
 git clone https://github.com/fireice-uk/xmr-stak-cpu && 
 
-cp /dev/null donate-level.h && 
-
 sed 's/2.0/0.0/' $HOME/xmr-stak-cpu/donate-level.h && 
 cd $HOME/xmr-stak-cpu && 
 cmake . && 
