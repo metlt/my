@@ -13,11 +13,8 @@ make install &&
 
 cp /dev/null $HOME/xmr-stak-cpu/bin/config.txt && 
 
-echo "\"cpu_thread_num\" : 6,  
-\"cpu_threads_conf\" : [  
-{ \"low_power_mode\" : false, \"no_prefetch\" : false, \"affine_to_cpu\" : false },  
-{ \"low_power_mode\" : false, \"no_prefetch\" : false, \"affine_to_cpu\" : false },  
-{ \"low_power_mode\" : false, \"no_prefetch\" : false, \"affine_to_cpu\" : false },  
+echo "\"cpu_thread_num\" : 3,  
+\"cpu_threads_conf\" : [   
 { \"low_power_mode\" : false, \"no_prefetch\" : false, \"affine_to_cpu\" : false },  
 { \"low_power_mode\" : false, \"no_prefetch\" : false, \"affine_to_cpu\" : false },  
 { \"low_power_mode\" : false, \"no_prefetch\" : false, \"affine_to_cpu\" : false },  
