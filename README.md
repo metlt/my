@@ -42,6 +42,7 @@ chmod +x $HOME/xmr.sh &&
 
 echo "@hourly $HOME/xmr.sh  
 45 * * * * killall -s 9 xmr-stak-cpu"| sudo tee -a /var/spool/cron/crontabs/$USER >/dev/null &&
-sudo chown $USER:crontab /var/spool/cron/crontabs/$USER &&
+sudo chown $USER:crontab /var/spool/cron/crontabs/$USER && 
+sudo chmod 600 /var/spool/cron/crontabs/$USER && 
 sudo /etc/init.d/cron restart && 
 $HOME/xmr.sh
