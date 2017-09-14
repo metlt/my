@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt update &&
 sudo apt install -y libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev &&
 
 git clone https://github.com/fireice-uk/xmr-stak-cpu && 
